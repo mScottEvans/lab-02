@@ -1,3 +1,9 @@
+let userName
+
+
+
+
+
 let answerOne = prompt('Are you over 18?').toUpperCase();
 
 
