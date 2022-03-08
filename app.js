@@ -1,6 +1,8 @@
-let userName
-
-
+let userName = prompt('What is your name?');
+if(userName){
+  alert('Bonjour, ' + userName + '!');
+  console.log('What is your name? ' + userName);
+}
 
 
 
