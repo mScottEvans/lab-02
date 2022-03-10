@@ -6,36 +6,44 @@ let attempts = 4;
 let myNumber = 25;
 let userGuess = null;
 
-let userName = prompt('What is your name?');
-if(userName){
-  alert('Bonjour, ' + userName + '!');
-  console.log('What is your name? ' + userName);
-}
 
+let userName = prompt('What is your name?');
+function sayhello(){
+  if(userName){
+    alert('Bonjour, ' + userName + '!');
+    console.log('What is your name? ' + userName);
+  }
+  console.log();
+}
+sayhello();
 
 
 let answerOne = prompt('Am I over 18?').toUpperCase();
-
-
-if(answerOne === 'Y' || answerOne === 'YES'){
-  score++;
-  alert('You are correct!');
-} else if(answerOne === 'N' || answerOne === 'NO'){
+function questionOne(){
+  if(answerOne === 'Y' || answerOne === 'YES'){
+    score++;
+    alert('You are correct!');
+  } else if(answerOne === 'N' || answerOne === 'NO'){
   alert('Sorry, your anwser is incorrect!');
+  }
+  console.log();
 }
+questionOne();
 
 
 
 
 let answerTwo = prompt('Do I live in a state where is mostly hot?').toUpperCase();
-
-
-if(answerTwo === 'Y' || answerTwo === 'YES'){
-  score++;
-  alert('You are correct!');
-} else if(answerTwo === 'N' || answerTwo === 'NO'){
-  alert('Sorry, your anwser is incorrect!');
+function questionTwo(){
+  if(answerTwo === 'Y' || answerTwo === 'YES'){
+    score++;
+    alert('You are correct!');
+  } else if(answerTwo === 'N' || answerTwo === 'NO'){
+    alert('Sorry, your anwser is incorrect!');
+  }
+  console.log();
 }
+questionTwo();
 
 
 let answerThree = prompt('Is my favorite color Blue?').toUpperCase();
@@ -147,9 +155,6 @@ while(attempts > 0){
   attempts--;
 
 }
-
-
-
 
 
 
