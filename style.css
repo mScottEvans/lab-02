@@ -17,3 +17,6 @@ body {
 #five{
   background-color: rgb(45, 182, 51);
 }
+div{
+  text-align-last: left;
+}
