@@ -104,7 +104,7 @@ if(answerFive === 'Y' || answerFive === 'YES'){
 // let myNumber = 25;
 // let userGuess = null;
 // let myNumber= Math.ceil(Math.random() * 50);
-console.log(myNumber);
+// console.log(myNumber);
 
 
 while(attempts > 0){
@@ -117,15 +117,36 @@ while(attempts > 0){
     alert('Too High, keep trying');
   } else{
     score++;
-    alert('You got it correct, your score is ' + score);
     break;
   }
 }
 
 
+let correctAnswers = ['a', 'd'];
+let result = false;
+attempts = 6;
 
+while(attempts > 0){
 
+  let answer = prompt('How many legs does a spider have?? \na. 8\nb. 8\nc. 7\nd. 9\ne. 3');
 
+  for (let i = 0; i<correctAnswers.length; i++) {
+    if (answer === correctAnswers[i]){
+      result = true;}
+}
+// end of it
+  if (result) {
+    alert('Correct');
+    alert(`Your final score is ${score}`);
+    score++;
+    break;
+} else {
+    alert('Incorrect');
+}
+
+  attempts--;
+
+}
 
 
 
