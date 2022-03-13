@@ -7,8 +7,8 @@ let myNumber = 25;
 let userGuess = null;
 
 
-let userName = prompt('What is your name?');
 function sayhello(){
+  let userName = prompt('What is your name?');
   if(userName){
     alert('Bonjour, ' + userName + '!');
     console.log('What is your name? ' + userName);
@@ -18,13 +18,15 @@ function sayhello(){
 sayhello();
 
 
-let answerOne = prompt('Am I over 18?').toUpperCase();
+
+
 function questionOne(){
+  let answerOne = prompt('Am I over 18?').toUpperCase();
   if(answerOne === 'Y' || answerOne === 'YES'){
     score++;
     alert('You are correct!');
   } else if(answerOne === 'N' || answerOne === 'NO'){
-  alert('Sorry, your anwser is incorrect!');
+    alert('Sorry, your anwser is incorrect!');
   }
   console.log();
 }
@@ -33,8 +35,10 @@ questionOne();
 
 
 
-let answerTwo = prompt('Do I live in a state where is mostly hot?').toUpperCase();
+
+
 function questionTwo(){
+  let answerTwo = prompt('Do I live in a state where is mostly hot?').toUpperCase();
   if(answerTwo === 'Y' || answerTwo === 'YES'){
     score++;
     alert('You are correct!');

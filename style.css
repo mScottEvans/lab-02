@@ -1,22 +1,29 @@
 body {
-  background-color: aquamarine;
+  background-color: rgb(103, 116, 111);
   text-align: center;
+  border-style: double;
 }
 #first{
-  background-color: blueviolet;
+  background-color: rgb(43, 198, 226);
+  border-style: dotted dashed solid double;
 }
 #second{
-  background-color: rgb(223, 226, 43);
+  background-color: rgb(95, 235, 235);
+  border-style: dotted dashed solid double;
 }
 #third{
-  background-color: rgb(43, 107, 226);
+  background-color: rgb(0, 89, 255);
+  border-style: dotted dashed solid double;
 }
 #forth{
-  background-color: rgb(226, 43, 186);
+  background-color: rgb(83, 43, 226);
+  border-style: dotted dashed solid double;
 }
 #five{
-  background-color: rgb(45, 182, 51);
+  background-color: rgb(56, 148, 128);
+  border-style: dotted dashed solid double;
 }
 div{
   text-align-last: left;
+  border-style: solid;
 }
